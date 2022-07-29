@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 
-const GifExperApp = () => {
+export const GifExperApp = () => {
   const [categories, setCategories] = useState(['One Punch', 'Dragon Ball']);
 
   // no es recomendable colocar un hook dentro de un if, esto va contra los principios de un hook
@@ -13,6 +14,8 @@ const GifExperApp = () => {
   return (
     <>
       <h1>GifExperApp</h1>
+
+      <AddCategory/>
 
       <button onClick={onAddCategory}> Agregar </button>
 
@@ -28,4 +31,3 @@ const GifExperApp = () => {
   )
 }
 
-export default GifExperApp
