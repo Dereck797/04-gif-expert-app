@@ -15,9 +15,8 @@ export const GifExperApp = () => {
     <>
       <h1>GifExperApp</h1>
 
-      <AddCategory/>
+      <AddCategory setCategories={ setCategories } categories={categories}/>
 
-      <button onClick={onAddCategory}> Agregar </button>
 
       <ol>
         {/* El método map nos ayuda a recorrer todos los elementos de una lista  */}
