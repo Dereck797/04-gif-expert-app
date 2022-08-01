@@ -15,7 +15,8 @@ export const GifGrid = ({ category }) => {
             <h3> {category} </h3>
             <ol>
                 {
-                    images.map( image => <li key={image.id}> {image.title} </li> )
+                    // Solución del profesor con desestructuración
+                    images.map( ({id, title}) => <li key={id}> {title} </li> )
                 }
             </ol>
         </>
